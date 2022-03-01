@@ -5,9 +5,9 @@ def ring():
 from datetime import timedelta
 
 
-# def process(counter, total, start, end):
-#     period = end - start
-#     remain = total - counter
-#     percent_remain = str(round(100*counter/total, 3))
-#     print("****"*counter + "----"*remain+"|"+percent_remain\
-#         + "%       " + str(timedelta(seconds = period)) + "|" + str(timedelta(seconds = period*remain)))
+def process_in(counter, total, start, end):
+    period = end - start
+    remain = total - counter
+    percent_remain = str(round(100*counter/total, 3))
+    print("****"*counter + "----"*remain+"|"+percent_remain\
+        + "%       " + str(timedelta(seconds = period)) + "|" + str(timedelta(seconds = period*remain)))
